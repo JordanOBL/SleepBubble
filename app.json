@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "sleepbubble",
+    "name": "SleepBubble",
     "slug": "sleepbubble",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/sleepbubble-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#111B35"
     },
     "ios": {
       "supportsTablet": true,
@@ -18,8 +18,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/sleepbubble-icon.png",
+        "backgroundColor": "#111B35"
       },
       "googleServicesFile": "./google-services.json",
       "package": "com.jwysong.sleepbubble"

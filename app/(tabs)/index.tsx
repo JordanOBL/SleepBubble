@@ -67,7 +67,7 @@ export default function App() {
   const fetchSleepStatus = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://sleepbubble-server-production.up.railway.app/sleepstatus");
+      const response = await fetch("https://sleepbubble-server-production.up.railway.app/sleepstatus");
       if (response.ok) {
         const data: SleepStatusResponse = await response.json();
         setSleepStatus(Number(data.sleepStatus));

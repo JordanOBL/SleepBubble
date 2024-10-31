@@ -13,6 +13,11 @@
       "backgroundColor": "#111B35"
     },
     "ios": {
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        }
+      },
       "supportsTablet": true,
       "bundleIdentifier": "org.sleepbubble"
     },
@@ -21,6 +26,7 @@
         "foregroundImage": "./assets/images/sleepbubble-icon.png",
         "backgroundColor": "#111B35"
       },
+      "usesCleartextTraffic": true,
       "googleServicesFile": "./google-services.json",
       "package": "com.jwysong.sleepbubble"
     },
@@ -31,7 +37,10 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+      "expo-build-properties", { "android": { "usesCleartextTraffic": true } }
+    ]
     ],
     "experiments": {
       "typedRoutes": true

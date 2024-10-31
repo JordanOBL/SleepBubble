@@ -190,8 +190,8 @@ export default function App() {
               </Text>
               </TouchableOpacity>
             <Switch
-              value={sleepStatus === 1}
-              onValueChange={ToggleSleepStatus}
+              value={sleepStatus === 1 ? true : false}
+              onValueChange={() => ToggleSleepStatus(sleepStatus === 1 ? false : true)}
               thumbColor={sleepStatus === 1 ? "#FFC107" : "#00509E"}
               trackColor={{ false: "#FFC107", true: "#00509E" }}
               style={styles.largeSwitch}
